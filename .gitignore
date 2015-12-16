@@ -11,5 +11,3 @@ test
 .bowerrc
 .editorconfig
 Gruntfile.js
-Procfile
-web.js
