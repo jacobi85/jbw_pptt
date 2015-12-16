@@ -1,0 +1,403 @@
+
+/* common */
+body {
+  font-family: verdana, arial;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color:#555555;
+  line-height:1.3em;
+}
+
+h1 {
+  font-size:34px;
+}
+
+p {
+  line-height: 1.5em;
+}
+
+/* layout */
+
+.container {
+  width:100%;
+  padding:0;
+}
+
+.inner-container {
+  width:100%;
+  margin: 0;
+  background-color:#3f4a50;
+}
+
+.inner-container > section {
+  width:100%;
+  background-color:#fff;
+  padding:12px 30px;
+}
+
+.divider {
+  height:2px;
+  background-color:#df402a;
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+
+
+#dashboard > section > article {
+  padding: 2em 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* graphics / images */
+
+.sprite {
+ background-color: #f0f0f0;
+ background: url(../images/pureprofiletechtest.png) no-repeat top left; 
+}
+
+.navbar-brand.sprite {
+  width:110px;
+  height:60px;
+  background-position:-298px -100px;
+}
+
+/* Header area */
+
+.letter-box {
+  width:180px;
+  height:180px;
+  background-color:white;
+  margin:0 auto;
+  -webkit-box-shadow: 0 2px 1px 0px rgba(0,0,0,0.10);
+  -moz-box-shadow: 0 2px 1px 0px rgba(0,0,0,0.10);
+  box-shadow: 0 2px 1px 0px rgba(0,0,0,0.10);
+
+}
+
+.middle {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.cottees-logo.sprite {
+  width:138px;
+  height:100px;
+  background-position:-298px 0;
+  margin: 0 auto;
+  display:block;
+}
+
+#soap-image-container--image {
+  width: 298px;
+  height:240px;
+}
+
+#dashboard-logo-container {
+  width: 240px;
+  padding: 30px 0 0 0;
+}
+
+#dashboard-details {
+  padding: 30px 0 0 0;
+  min-height: 190px;
+  position:relative;
+}
+
+#dashboard-details > footer {
+  position: absolute;
+  bottom: 0;
+}
+
+#dashboard-details > footer > hr { width:60px }
+
+.dashboard-article-button {
+  margin-top:1em;
+  text-transform: uppercase;
+  font-size:.75em;
+  float:right;
+  margin-left: 1em;
+}
+
+.dashboard-header > header > hgroup > h2,
+.dashboard-header > header > hgroup > h3  {
+  margin: 0;
+}
+
+.dashboard-header > footer {
+  margin-top: -20px;
+}
+
+.dashboard-header > footer > hr {
+  width:40px;
+}
+
+.page-header {
+  padding-top:18px;
+  margin: 50px 0 0;
+  background-color:#f5f1ee;
+}
+
+
+/* Dashboard area */
+
+.dashboard-table {margin-top:2em;}
+.dashboard-gauge { 
+  width: 300px;
+  text-align:center;
+  margin: 0 auto;
+}
+
+.dashboard-gauge p {
+  color:#676767
+}
+
+.dashboard-gauge p > strong {
+  line-height:2.5em;
+  color:#222;
+}
+
+.table.dashboard-table > thead > tr > th { font-weight: normal }
+.table.dashboard-table > thead > tr > th:after { content: ":" }
+
+.table.dashboard-table>tbody>tr>td,
+.table.dashboard-table>tbody>tr>th {font-weight:bold;}
+
+.table.dashboard-table>tbody>tr>td:last-child {color:#f45f27;}
+
+/* no borders, decreased line-height */
+.table.dashboard-table>tbody>tr>td,
+.table.dashboard-table>tbody>tr>th,
+.table.dashboard-table>tfoot>tr>td,
+.table.dashboard-table>tfoot>tr>th,
+.table.dashboard-table>thead>tr>td,
+.table.dashboard-table>thead>tr>th {
+  border:none;
+  line-height: .5em;
+  padding-left:0;
+}
+
+#dashboard-gauges-container { width:600px; margin:0 auto;}
+
+#dashboard-impact-ranking-container {
+  padding-top:3em;
+}
+#dashboard-impact-ranking-container > aside {
+  width:135px;
+  float:left;
+}
+
+#dashboard-impact-ranking-container > aside > dl {
+  font-size:12px;
+}
+
+#dashboard-impact-ranking-container > aside > dl > dt {
+  margin-top:20px;
+  font-weight:normal;
+  white-space: nowrap;
+}
+#dashboard-impact-ranking-container > aside > dl > dt:first-child {
+  margin:0;
+}
+
+#dashboard-impact-ranking-container > aside > dl > dd {
+  margin-bottom:18px;
+  font-size:.9em;
+  line-height:1.5em;
+  white-space: nowrap;
+}
+
+#dashboard-impact-ranking-container > section {
+  float:left;
+  padding-top: 3px;
+}
+
+#dashboard-impact-ranking-container > section > .chart {
+  padding-left: 1em;
+  padding-right: 1.5em;
+  height:300px;
+}
+
+#dashboard-impact-ranking-container > section > .chart > .rule {
+  color: black;
+}
+
+/* Navigation */
+
+#primary-navigation.navbar-nav {
+  height:60px;
+}
+
+#primary-navigation.navbar-nav>li {
+  width: 96px;
+  height:60px;
+}
+
+#primary-navigation.navbar-nav>li>a {
+  position: relative;
+  width:96px;
+  height: 60px;
+  padding:0;
+  background-color: #ededed;
+  text-align:center;
+}
+
+#primary-navigation.navbar-nav>li>a:hover{
+  background-color: #ddd;
+}
+
+#primary-navigation.navbar-nav>li>a:active {
+  background-color: #3f4a50;
+  color:white;
+}
+#primary-navigation.navbar-nav>li>a:active:before {
+  background-color: #3f4a50;
+  background-position: -408px -122px;
+  color:white;
+}
+
+#primary-navigation.navbar-nav>li>a>span {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  margin-left: -48px;
+}
+
+#primary-navigation.navbar-nav>li>a:before{
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 50%; /* centers the left edge */
+  width: 28px;
+  height: 22px;
+  background: url(../images/pureprofiletechtest.png) no-repeat -408px -100px;
+  margin-left: -14px; /* this centers the actual sprite. This is half the sprite-image width. if you don't do this, the left edge will be centered instead of the center of the sprite.  */
+}
+
+/* bootstrap overrides */
+
+.btn {
+  border-radius: 0;
+} 
+
+button > span {
+  vertical-align: baseline;
+}
+
+.navbar {
+  background-color: #ededed;
+
+}
+
+.navbar-nav {
+  float: left;
+  margin: 0;
+}
+
+.navbar-nav>li>a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+.navbar-toggle {
+  display:block;
+}
+
+.navbar-header {
+  float: none;
+}
+.navbar-collapse .navbar-left,.navbar-right {
+  float: none !important;
+}
+.navbar-collapse .navbar-toggle {
+  display: block;
+}
+.navbar-collapse {
+  width: 100%;
+  text-align: right;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  border-bottom: 5px solid #dadada;
+}
+.navbar-collapse.collapse {
+  display: none!important;
+}
+.navbar-collapse .navbar-nav {
+  float: none!important;
+}
+.navbar-collapse .navbar-nav>li {
+  float: none;
+}
+.navbar-collapse .navbar-nav>li>a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.collapse.in{
+  display:block !important;
+}
+
+.nav-pills>li{
+  margin-right: 1em;
+  line-height: 1.8em;
+}
+
+.nav-pills>li>span.glyphicon {
+  margin-right: .3em;
+}
+
+/* Responsive: Portrait tablets and down */
+@media screen and (max-width: 767px) {
+  .table-responsive {border:none;}
+
+}
+
+@media screen and (max-width: 590px) {
+
+  h1 {font-size:28px;}
+  h2 {font-size:24px;}
+  h3 {font-size:20px;}
+
+  .page-header-container {
+    margin:0 auto;
+    padding: 0 10%;
+  }
+
+  #dashboard-logo-container, 
+  #dashboard-details, 
+  #soap-image-container  {width:100%;}
+
+  #dashboard-summary-gauges-container { 
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  #dashboard-summary-gauges-container > div {
+    padding:0;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
+  #soap-image-container {
+    float:right;
+  }
+
+  #dashboard-summary-gauges-container {
+    width: 600px;
+    margin:0 auto;
+  }
+
+  .inner-container > section {
+    width: calc(100% - 250px);
+  }
+}

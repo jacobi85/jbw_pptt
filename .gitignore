@@ -1,0 +1,15 @@
+# Ignore pattern for Production
+node_modules/
+.tmp/
+.DS_Store
+.htaccess
+robots.txt
+.buildignore
+dist
+bower_components/
+test
+.bowerrc
+.editorconfig
+Gruntfile.js
+Procfile
+web.js

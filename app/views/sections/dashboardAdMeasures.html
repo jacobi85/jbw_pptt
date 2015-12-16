@@ -1,0 +1,19 @@
+<article id="dashboard-gauges" class="row">
+	<dashboard-header data="vm.gaugeData"></dashboard-header>
+	<section id="dashboard-gauges-container">
+		<div ng-repeat="gauge in vm.gaugeData.gauges" class="col-sm-6 col-md-6">
+			<div class="dashboard-gauge">
+				<just-gage id="dashboard-gauges-container--{{$index + 1}}" 
+				min=0 
+				max={{gauge.data.range}} 
+				relative-gauge-size=true
+				value={{gauge.data.value}}
+				title="" 
+				decimals="1"
+				custom-sectors="{{gauge.data.colors}}"></just-gage>
+				<p><strong>	{{gauge.title}}</strong><br />
+					{{gauge.questionLabel}}</p>
+				</div>
+			</div>
+		</section>
+	</article>

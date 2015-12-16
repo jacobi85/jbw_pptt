@@ -1,0 +1,19 @@
+<div class="dashboard-header">
+	<header class="row">
+		<hgroup class="col-xs-7 col-md-7">
+			<h2>{{data.mainTitle}}</h2>
+		</hgroup>
+		<div class="col-xs-5 col-md-5">
+			<aside class="pull-right dashboard-article-button-container">
+				<button ng-repeat="button in data.buttons" class="btn btn-danger dashboard-article-button" >
+					<span ng-if="button.icon"class="glyphicon glyphicon-cog"></span>
+					{{button.label}}
+				</button>
+			</aside>
+		</div>
+	</header>
+	<footer>
+		<hr class="divider" />
+		<p>{{data.description}}</p>
+	</footer>
+</div>
